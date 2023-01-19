@@ -1,0 +1,34 @@
+schematics:
+  - gameMap1
+  - gameMap2
+  - gameMap3
+  - gameMap4
+  - gameMap5
+  - gameMap6
+  - gameMap7
+  - gameMap8
+  - gameMap9
+  - gameMap10
+  - gameMap11
+
+schematicPasteLocation: "world, -200, 74, 196"
+
+defaultGroundBlock: "gray"
+
+locations:
+  spawnLocation: "world, -210, 75, 196"
+  colorScreen:
+    pos1: "world, -224, 83, 202"
+    pos2: "world, -224, 78, 190"
+  mapGroundSquare:
+    pos1: "-201,74,186"
+    pos2: "-221,74,206"
+  lobbyLocation: "world, -210 83 196"
+
+placeHolderBlocks:
+  - oak
+  - spruce
+  - acacia
+  - birch
+  - dark_oak
+  - jungle

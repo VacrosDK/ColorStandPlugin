@@ -1,0 +1,8 @@
+name: ColorStandPlugin
+version: 1.0
+main: com.gmail.vacrosdk.ColorStandPlugin
+
+commands:
+  colorStand:
+    aliases: ["cs", "colors"]
+
