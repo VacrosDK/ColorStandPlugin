@@ -25,6 +25,12 @@ locations:
     pos2: "-221,74,206"
   lobbyLocation: "world, -210 83 196"
 
+time:
+  #In seconds
+  lookingAtBlocks: 10
+  runningToBlocks: 10
+  pauseTime: 2
+
 placeHolderBlocks:
   - oak
   - spruce

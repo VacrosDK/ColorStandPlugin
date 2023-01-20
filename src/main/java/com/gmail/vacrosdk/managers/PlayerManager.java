@@ -33,6 +33,10 @@ public class PlayerManager {
         return playerSet.size() == 2;
     }
 
+    public boolean isOnePlayerLeft() {
+        return playerSet.size() == 1;
+    }
+
     public void remove(UUID uuid) {
         playerSet.remove(uuid);
         Player player = Bukkit.getPlayer(uuid);

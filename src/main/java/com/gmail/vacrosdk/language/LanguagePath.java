@@ -42,5 +42,6 @@ public class LanguagePath extends CustomLanguage {
             "&8- &fNår tiden er gået med at huske blokkene," +
             "&f vil en blok blive vist på farvetavlen. Stå på den!";
     public static String RESAT_GAME = "&aDu resatte ColorStand.";
+    public static String YOU_LOST = "&cDu er røget ud af ColorStand!";
 }
  

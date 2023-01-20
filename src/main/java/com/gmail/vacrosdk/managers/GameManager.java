@@ -41,21 +41,21 @@ public class GameManager {
             locationManager.teleport(uuid, spawnLocation);
         });
         countdownManager.startGameCountDown(playerSet);
-        Bukkit.getScheduler().runTaskLater(plugin, () -> createFirstRound(config), 100);
+        Bukkit.getScheduler().runTaskLater(plugin, () -> doGameLoop(config), 100);
     }
 
     public void reset() {
         statusManager.reset();
         playerManager.reset();
-        colorFloorManager.reset();
+        colorFloorManager.setGreyFloor();
     }
 
-    private void createFirstRound(ConfigManager config) {
+    public void doGameLoop(ConfigManager config) {
         schematicManager.setSchematic();
         materialManager.createNewMaterialsForRound(statusManager.getCurrentDifficulty());
         schematicManager.pasteSchematic();
         colorFloorManager.replacePlaceholderBlocks(config);
-        timeManager.startFaseOneCountdown();
+        timeManager.startFaseOneCountdown(plugin, config);
     }
 
     public void stopGame(UUID winner) {

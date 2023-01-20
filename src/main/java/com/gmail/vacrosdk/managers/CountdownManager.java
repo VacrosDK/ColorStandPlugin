@@ -27,7 +27,9 @@ public class CountdownManager {
     }
 
     public void createXpCountDown(Set<UUID> uuids, int time) {
-
+        uuids.forEach(uuid -> {
+            createXpCountDown(uuid, time);
+        });
     }
 
     public void createXpCountDown(UUID uuid, int time) {
